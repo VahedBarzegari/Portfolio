@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Academic Website">
+    <title>Vahed Barzegari - Academic Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">VB</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#bio" class="nav-link">Bio</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#publications" class="nav-link">Publications</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#certificates" class="nav-link">Certificates</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section / Home -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="photo_2025-09-09_20-57-59.jpg" alt="Vahed Barzegari">
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-name">Vahed Barzegari</h1>
+                    <p class="hero-title">Academic Professional</p>
+                    <p class="hero-description">Welcome to my academic portfolio. Explore my research, projects, and professional journey.</p>
+                    <div class="hero-buttons">
+                        <a href="#bio" class="btn btn-primary">Learn More</a>
+                        <a href="#contact" class="btn btn-secondary">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bio Section -->
+    <section id="bio" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="bio-content">
+                <div class="bio-text">
+                    <p>I am a dedicated academic professional with a passion for research and innovation. My work focuses on advancing knowledge in my field and contributing to meaningful projects that make a difference.</p>
+                    <p>With a strong foundation in both theoretical understanding and practical application, I strive to bridge the gap between academic research and real-world solutions. I am committed to continuous learning and professional development.</p>
+                    <div class="bio-details">
+                        <div class="detail-item">
+                            <strong>Location:</strong> <span>Toronto, Canada</span>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Email:</strong> <a href="mailto:vahed@yorku.ca">vahed@yorku.ca</a>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Research Interests:</strong> <span>Public Transportation Systems, Transit Electrification, Optimization and Operations Research, Urban Accessibility and Equity, Transportation Network Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Doctor of Philosophy (PhD): Civil Engineering – Transportation</h3>
+                        <p class="timeline-institution">K. N. Toosi University of Technology</p>
+                        <p class="timeline-date">September 2017 – February 2023</p>
+                        <p class="timeline-description">Tehran, Iran</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Master of Science (MSc): Civil Engineering – Transportation Planning</h3>
+                        <p class="timeline-institution">K.N. Toosi University of Technology</p>
+                        <p class="timeline-date">September 2015 – September 2017</p>
+                        <p class="timeline-description">Tehran, Iran</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Bachelor of Science (BSc): Civil Engineering</h3>
+                        <p class="timeline-institution">K.N. Toosi University of Technology</p>
+                        <p class="timeline-date">September 2011 – August 2015</p>
+                        <p class="timeline-description">Tehran, Iran</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Research Assistant (Post Doctoral Fellow)</h3>
+                        <p class="timeline-institution">York University</p>
+                        <p class="timeline-date">July 2024 – Present</p>
+                        <p class="timeline-location">Toronto, Canada</p>
+                        <ul class="timeline-description">
+                            <li>Developed an interactive 15-minute city accessibility toolkit using Python Shiny and OpenStreetMap, integrating census data to analyse amenity distribution, population needs, and multimodal access across Toronto.</li>
+                            <li>Designed and validated novel duplication indicators (segment- and passenger-based) to evaluate network efficiency, providing evidence-based policy recommendations for urban transit in Almaty.</li>
+                            <li>Engineered an extended data specification (TPFS) enhancing GTFS by incorporating Revenue, Non-Revenue, and Ridership feeds, and demonstrated practical implementation with DART case study.</li>
+                            <li>Developed an integrated optimization framework for charger deployment, fleet type selection, and scheduling, applying it to 20 major transit networks to evaluate electrification strategies.</li>
+                            <li>Built a mixed-integer optimization model and interactive decision-support tool for electric bus allocation and charging, enabling scenario-based planning and validated with TTC operations.</li>
+                            <li>Created predictive analytics methods using real-time GTFS data to detect and mitigate bus bunching/gapping, enhancing service reliability and operational planning.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Civil Technician</h3>
+                        <p class="timeline-institution">Madanchian Chogharat Civil and Development Cooperative Company</p>
+                        <p class="timeline-date">June 2023 – December 2023</p>
+                        <p class="timeline-location">Bafq, Iran</p>
+                        <ul class="timeline-description">
+                            <li>Developed and maintained managerial dashboards in Excel to monitor 10+ years of project data, including budgets, scope of work (SOW), progress tracking, and project duration.</li>
+                            <li>Prepared comprehensive reports (monthly, quarterly, and annual) to support data-driven decision-making and performance evaluation.</li>
+                            <li>Collaborated with project partners and stakeholders through regular meetings to align objectives, review progress, and address challenges.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Data Analyst</h3>
+                        <p class="timeline-institution">Yazd University</p>
+                        <p class="timeline-date">August 2022 – May 2023</p>
+                        <p class="timeline-location">Yazd, Iran</p>
+                        <ul class="timeline-description">
+                            <li>Investigated regulatory, legal, and social aspects of motorcycle use in Isfahan to inform evidence-based mobility policies.</li>
+                            <li>Applied machine learning techniques to accident data for predicting high-risk locations, identifying safety hazards, and uncovering key accident causes.</li>
+                            <li>Analysed spatial patterns of crashes to map hazard-prone areas and prioritize safety interventions.</li>
+                            <li>Proposed urban design and policy measures, including dedicated motorcycle lanes, restricted streets, and improved enforcement to enhance mobility and safety.</li>
+                            <li>Conducted a questionnaire survey to explore rider demographics, usage patterns, and behavioural factors, applying ML-based clustering for deeper insights.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Research Assistant</h3>
+                        <p class="timeline-institution">Islamic Republic of Iran Railways</p>
+                        <p class="timeline-date">November 2020 – February 2022</p>
+                        <p class="timeline-location">Tehran, Iran</p>
+                        <ul class="timeline-description">
+                            <li>Developed an integrated mixed-integer linear optimization model in GAMS and Python for rail freight operations, minimizing demand dissatisfaction and disorder in wagon dispatching.</li>
+                            <li>Conducted a case study on Zob Ahan (Isfahan, Iran) demonstrating the model's ability to significantly reduce circulating wagons while meeting freight demand.</li>
+                            <li>Performed sensitivity analyses showing the rail network's capacity to accommodate a 2.8-fold demand increase without new infrastructure and robustness to running time deviations up to 15%.</li>
+                            <li>Built interactive managerial dashboards in Excel to visualize and analyse commodity flows across origin-destination pairs with dynamic filters (origins, destinations, commodities, time periods).</li>
+                            <li>Enabled data-driven decision-making through dashboards providing detailed travel time analytics and performance monitoring of freight operations.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Bus Electrification Tool</h3>
+                        <span class="project-year">2025</span>
+                    </div>
+                    <p class="project-description">To help bring research into practice, I've developed an electrification planning tool that lets transit agencies explore different charging and battery scenarios and see the consequences of each decision instead of relying on guesswork. It provides a simple way to test charging locations, battery sizes, and operating strategies, making data-driven electrification planning easier and more practical.</p>
+                    <div class="project-image">
+                        <img src="Bus Electrification Tool.png" alt="Bus Electrification Tool Interface">
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Shiny</span>
+                        <span class="tag">Optimization</span>
+                        <span class="tag">Transit Planning</span>
+                        <span class="tag">Electrification</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Headway Management Tool</h3>
+                        <span class="project-year">2025</span>
+                    </div>
+                    <p class="project-description">In collaboration with the Toronto Transit Commission (TTC), we implemented a headway management pilot on six routes in Toronto to reduce bus bunching (when buses scheduled at even intervals arrive in quick succession) and gapping. This tool helps transit operators maintain consistent service intervals and improve overall service reliability.</p>
+                    <div class="project-image">
+                        <img src="Bunching Tool.png" alt="Headway Management Tool Interface">
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">GTFS</span>
+                        <span class="tag">Real-time Data</span>
+                        <span class="tag">Transit Operations</span>
+                        <span class="tag">Predictive Analytics</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>15-Minute City Accessibility Toolkit</h3>
+                        <span class="project-year">2025</span>
+                    </div>
+                    <p class="project-description">The Toronto 15-Minute City Toolkit is an interactive, data-driven platform designed to assess and visualize accessibility across urban areas of Toronto. It integrates multimodal travel data, demographic information, and detailed facility distributions to support urban planning, accessibility evaluation, and equity analysis within the 15-minute city framework.</p>
+                    <div class="project-image">
+                        <img src="15Minute Toolkit.png" alt="15-Minute City Accessibility Toolkit Interface">
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Shiny</span>
+                        <span class="tag">OpenStreetMap</span>
+                        <span class="tag">GIS</span>
+                        <span class="tag">Urban Planning</span>
+                        <span class="tag">Accessibility Analysis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section">
+        <div class="container">
+            <h2 class="section-title">Publications</h2>
+            <div class="publications-list">
+                <div class="publication-item">
+                    <div class="publication-header">
+                        <h3>A comprehensive analysis of duplication in public transportation</h3>
+                        <span class="publication-year">2026</span>
+                    </div>
+                    <p class="publication-authors">Barzegari, V., Taubkin, G.G., Barsukov, P. and Nourinejad, M.</p>
+                    <p class="publication-venue">Transportation Research Part A: Policy and Practice, 204, p.104747</p>
+                    <div class="publication-links">
+                        <a href="https://www.sciencedirect.com/science/article/pii/S0965856425003805" target="_blank" rel="noopener noreferrer" class="publication-link">Access</a>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-header">
+                        <h3>Transit electrification through charger deployment, fleet type selection, and charging schedule optimization</h3>
+                        <span class="publication-year">2025</span>
+                    </div>
+                    <p class="publication-authors">Barzegari, V. and Nourinejad, M.</p>
+                    <p class="publication-venue">Energy, p.139181</p>
+                    <div class="publication-links">
+                        <a href="https://www.sciencedirect.com/science/article/pii/S0360544225048236" target="_blank" rel="noopener noreferrer" class="publication-link">Access</a>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-header">
+                        <h3>Public transportation fleet electrification and charger schedule optimization using a decomposition heuristic</h3>
+                        <span class="publication-year">2025</span>
+                    </div>
+                    <p class="publication-authors">Naeimian, B., Mohseni, G., Barzegari, V., Nourinejad, M. and Park, P.Y.</p>
+                    <p class="publication-venue">Energy, 333, p.137135</p>
+                    <div class="publication-links">
+                        <a href="https://www.sciencedirect.com/science/article/pii/S036054422502777X" target="_blank" rel="noopener noreferrer" class="publication-link">Access</a>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-header">
+                        <h3>Fleet cost and capacity effects of automated vehicles in mixed traffic networks: A system optimal assignment problem</h3>
+                        <span class="publication-year">2023</span>
+                    </div>
+                    <p class="publication-authors">Barzegari, V., Edrisi, A. and Nourinejad, M.</p>
+                    <p class="publication-venue">Transportation Research Part C: Emerging Technologies, 148, p.104020</p>
+                    <div class="publication-links">
+                        <a href="https://www.sciencedirect.com/science/article/pii/S0968090X23000098" target="_blank" rel="noopener noreferrer" class="publication-link">Access</a>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-header">
+                        <h3>Subway System Usage by Elderly: Application of a Hybrid Choice Model</h3>
+                        <span class="publication-year">2022</span>
+                    </div>
+                    <p class="publication-authors">Edrisi, A., Hayati Salout, M., Ganjipour, H. and Barzegari, V.</p>
+                    <p class="publication-venue">Numerical Methods in Civil Engineering, 7(3), pp.78-93</p>
+                    <div class="publication-links">
+                        <a href="https://nmce.kntu.ac.ir/article_160558.html" target="_blank" rel="noopener noreferrer" class="publication-link">Access</a>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-header">
+                        <h3>Optimal number and location of parking facilities in presence of autonomous vehicles</h3>
+                        <span class="publication-year">2022</span>
+                    </div>
+                    <p class="publication-authors">Barzegari, V. and Edrisi, A.</p>
+                    <p class="publication-venue">Numerical Methods in Civil Engineering, 7(1), pp.70-83</p>
+                    <div class="publication-links">
+                        <a href="https://nmce.kntu.ac.ir/article_160583.html" target="_blank" rel="noopener noreferrer" class="publication-link">Access</a>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-header">
+                        <h3>Serial formation and parallel competition in public transportation</h3>
+                        <span class="publication-year">2021</span>
+                    </div>
+                    <p class="publication-authors">Edrisi, A., Barzegari, V. and Nourinejad, M.</p>
+                    <p class="publication-venue">Transportmetrica A: Transport Science, 17(4), pp.1193-1216</p>
+                    <div class="publication-links">
+                        <a href="https://www.tandfonline.com/doi/abs/10.1080/23249935.2020.1842940" target="_blank" rel="noopener noreferrer" class="publication-link">Access</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Optimization and Modelling</h3>
+                    <div class="skills-list">
+                        <span class="skill-item">Mixed-integer Linear Programming (MILP)</span>
+                        <span class="skill-item">Decomposition Heuristics</span>
+                        <span class="skill-item">Scheduling Optimization</span>
+                        <span class="skill-item">Fleet Allocation</span>
+                        <span class="skill-item">Charger Allocation</span>
+                        <span class="skill-item">Transit Electrification Planning</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Programming and Tools</h3>
+                    <div class="skills-list">
+                        <span class="skill-item">MATLAB</span>
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">Pandas</span>
+                        <span class="skill-item">NumPy</span>
+                        <span class="skill-item">Shiny</span>
+                        <span class="skill-item">Matplotlib</span>
+                        <span class="skill-item">Seaborn</span>
+                        <span class="skill-item">HTML</span>
+                        <span class="skill-item">CSS</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">GAMS</span>
+                        <span class="skill-item">Excel</span>
+                        <span class="skill-item">VBA</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Software</h3>
+                    <div class="skills-list">
+                        <span class="skill-item">EMME</span>
+                        <span class="skill-item">Microsoft Office Suite</span>
+                        <span class="skill-item">Excel</span>
+                        <span class="skill-item">Word</span>
+                        <span class="skill-item">PowerPoint</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Data Analysis and Machine Learning</h3>
+                    <div class="skills-list">
+                        <span class="skill-item">Predictive Analytics</span>
+                        <span class="skill-item">Clustering</span>
+                        <span class="skill-item">Regression Analysis</span>
+                        <span class="skill-item">Accident Risk Modelling</span>
+                        <span class="skill-item">Demand Forecasting</span>
+                        <span class="skill-item">Spatial Analysis</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>GIS and Mapping</h3>
+                    <div class="skills-list">
+                        <span class="skill-item">QGIS</span>
+                        <span class="skill-item">OpenStreetMap</span>
+                        <span class="skill-item">Spatial Data Integration</span>
+                        <span class="skill-item">Urban Accessibility Analysis</span>
+                        <span class="skill-item">Transit Network Visualization</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <div class="skills-list">
+                        <span class="skill-item">Communication</span>
+                        <span class="skill-item">Collaboration</span>
+                        <span class="skill-item">Presentation</span>
+                        <span class="skill-item">Independent Working</span>
+                        <span class="skill-item">Team Setting</span>
+                        <span class="skill-item">Problem-solving</span>
+                        <span class="skill-item">Public Engagement</span>
+                        <span class="skill-item">Technical Documentation</span>
+                        <span class="skill-item">Project Management</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="section">
+        <div class="container">
+            <h2 class="section-title">Certificates</h2>
+            <div class="certificates-grid">
+                <div class="certificate-card">
+                    <div class="certificate-icon">🎓</div>
+                    <h3>Databases and SQL for Data Science with Python</h3>
+                    <p class="certificate-issuer">IBM (Coursera)</p>
+                    <p class="certificate-date">November 2025</p>
+                    <p class="certificate-id">Credential ID: Q4PU2UKLKR5B</p>
+                    <a href="https://coursera.org/verify/Q4PU2UKLKR5B" target="_blank" rel="noopener noreferrer" class="certificate-link">Verify Certificate</a>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-icon">🎓</div>
+                    <h3>Certificate Name</h3>
+                    <p class="certificate-issuer">Issuing Organization</p>
+                    <p class="certificate-date">Month Year</p>
+                    <a href="#" class="certificate-link">View Certificate</a>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-icon">📜</div>
+                    <h3>Certificate Name</h3>
+                    <p class="certificate-issuer">Issuing Organization</p>
+                    <p class="certificate-date">Month Year</p>
+                    <a href="#" class="certificate-link">View Certificate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-content">
+                <p>Feel free to reach out for collaborations, questions, or opportunities.</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <strong>Email:</strong>
+                        <a href="mailto:vahed@yorku.ca">vahed@yorku.ca</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>LinkedIn:</strong>
+                        <a href="https://www.linkedin.com/in/vahed-barzegari-bafghi-214936228/" target="_blank" rel="noopener noreferrer">linkedin.com/in/vahed-barzegari-bafghi-214936228</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>GitHub:</strong>
+                        <a href="https://github.com/VahedBarzegari" target="_blank" rel="noopener noreferrer">github.com/VahedBarzegari</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Google Scholar:</strong>
+                        <a href="https://scholar.google.ca/citations?hl=en&user=JHjxrhYAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener noreferrer">scholar.google.ca/citations?user=JHjxrhYAAAAJ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Vahed Barzegari. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
