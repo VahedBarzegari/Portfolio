@@ -117,7 +117,10 @@
     <section id="experience" class="section">
         <div class="container">
             <h2 class="section-title">Work Experience</h2>
-            <div class="timeline">
+            <div class="carousel-wrapper">
+                <div class="carousel-container">
+                    <div class="carousel-track timeline-carousel">
+                <div class="carousel-slide">
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
@@ -135,6 +138,8 @@
                         </ul>
                     </div>
                 </div>
+                </div>
+                <div class="carousel-slide">
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
@@ -149,6 +154,8 @@
                         </ul>
                     </div>
                 </div>
+                </div>
+                <div class="carousel-slide">
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
@@ -165,6 +172,8 @@
                         </ul>
                     </div>
                 </div>
+                </div>
+                <div class="carousel-slide">
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
@@ -181,6 +190,21 @@
                         </ul>
                     </div>
                 </div>
+                    </div>
+                </div>
+                <button class="carousel-btn carousel-btn-prev" aria-label="Previous">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                <div class="carousel-navigation">
+                    <div class="carousel-dots"></div>
+                </div>
+                <button class="carousel-btn carousel-btn-next" aria-label="Next">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
             </div>
         </div>
     </section>
@@ -189,16 +213,19 @@
     <section id="projects" class="section section-alt">
         <div class="container">
             <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
+            <div class="carousel-wrapper">
+                <div class="carousel-container">
+                    <div class="carousel-track projects-carousel">
+                <div class="carousel-slide">
                 <div class="project-card">
                     <div class="project-header">
                         <h3>TransitPath</h3>
                         <span class="project-year">2025</span>
                     </div>
-                    <p class="project-description">Transit Travel Planner Tool is an advanced routing and analytics platform that computes realistic door-to-door travel paths by integrating scheduled transit (GTFS), walking networks, and time-dependent transfers. The tool identifies optimal itineraries based on earliest arrival, travel time reliability, and detailed trajectory reconstruction, providing researchers and planners with transparent, second-by-second insights into how passengers move through the transit system.</p>
                     <div class="project-image">
                         <img src="transitpath.png" alt="TransitPath Interface">
                     </div>
+                    <p class="project-description">An advanced routing platform that computes realistic door-to-door travel paths by integrating GTFS transit data, walking networks, and time-dependent transfers.<br><br>Provides optimal itineraries with second-by-second trajectory insights for researchers and planners.</p>
                     <div class="project-tags">
                         <span class="tag">Python</span>
                         <span class="tag">GTFS</span>
@@ -208,15 +235,17 @@
                         <span class="tag">Transit Operations</span>
                     </div>
                 </div>
+                </div>
+                <div class="carousel-slide">
                 <div class="project-card">
                     <div class="project-header">
                         <h3>GTFS Analysis Tool</h3>
                         <span class="project-year">2025</span>
                     </div>
-                    <p class="project-description">This tool provides comprehensive validation, error detection, and in-depth analytics for GTFS (General Transit Feed Specification) datasets. It is designed to help researchers, planners, and developers identify data issues and gain deeper insights into transit feeds.</p>
                     <div class="project-image">
                         <img src="GTFSTool.png" alt="GTFS Analysis Tool Interface">
                     </div>
+                    <p class="project-description">A comprehensive validation and analytics tool for GTFS datasets.<br><br>Enables researchers, planners, and developers to identify data issues, validate feed quality, and gain deeper insights into transit network structures.</p>
                     <div class="project-tags">
                         <span class="tag">JavaScript</span>
                         <span class="tag">GTFS</span>
@@ -224,15 +253,17 @@
                         <span class="tag">Transit Planning</span>
                     </div>
                 </div>
+                </div>
+                <div class="carousel-slide">
                 <div class="project-card">
                     <div class="project-header">
                         <h3>Bus Electrification Tool</h3>
                         <span class="project-year">2025</span>
                     </div>
-                    <p class="project-description">To help bring research into practice, I've developed an electrification planning tool that lets transit agencies explore different charging and battery scenarios and see the consequences of each decision instead of relying on guesswork. It provides a simple way to test charging locations, battery sizes, and operating strategies, making data-driven electrification planning easier and more practical.</p>
                     <div class="project-image">
                         <img src="Bus Electrification Tool.png" alt="Bus Electrification Tool Interface">
                     </div>
+                    <p class="project-description">An interactive planning tool that enables transit agencies to explore charging infrastructure and battery scenarios.<br><br>Test different configurations, evaluate costs, and optimize fleet electrification strategies with data-driven insights.</p>
                     <div class="project-tags">
                         <span class="tag">Python</span>
                         <span class="tag">Shiny</span>
@@ -241,15 +272,17 @@
                         <span class="tag">Electrification</span>
                     </div>
                 </div>
+                </div>
+                <div class="carousel-slide">
                 <div class="project-card">
                     <div class="project-header">
                         <h3>Headway Management Tool</h3>
                         <span class="project-year">2025</span>
                     </div>
-                    <p class="project-description">In collaboration with the Toronto Transit Commission (TTC), we implemented a headway management pilot on six routes in Toronto to reduce bus bunching (when buses scheduled at even intervals arrive in quick succession) and gapping. This tool helps transit operators maintain consistent service intervals and improve overall service reliability.</p>
                     <div class="project-image">
                         <img src="Bunching Tool.png" alt="Headway Management Tool Interface">
                     </div>
+                    <p class="project-description">Developed in collaboration with TTC, this tool uses real-time GTFS data and predictive analytics to detect and mitigate bus bunching and gapping.<br><br>Helps operators maintain consistent headways and improve service reliability across six pilot routes.</p>
                     <div class="project-tags">
                         <span class="tag">Python</span>
                         <span class="tag">GTFS</span>
@@ -258,15 +291,17 @@
                         <span class="tag">Predictive Analytics</span>
                     </div>
                 </div>
+                </div>
+                <div class="carousel-slide">
                 <div class="project-card">
                     <div class="project-header">
                         <h3>15-Minute City Accessibility Toolkit</h3>
                         <span class="project-year">2025</span>
                     </div>
-                    <p class="project-description">The Toronto 15-Minute City Toolkit is an interactive, data-driven platform designed to assess and visualize accessibility across urban areas of Toronto. It integrates multimodal travel data, demographic information, and detailed facility distributions to support urban planning, accessibility evaluation, and equity analysis within the 15-minute city framework.</p>
                     <div class="project-image">
                         <img src="15Minute Toolkit.png" alt="15-Minute City Accessibility Toolkit Interface">
                     </div>
+                    <p class="project-description">An interactive platform that assesses and visualizes accessibility across Toronto using multimodal travel data, demographics, and facility distributions.<br><br>Supports urban planning, equity analysis, and accessibility evaluation within the 15-minute city framework.</p>
                     <div class="project-tags">
                         <span class="tag">Python</span>
                         <span class="tag">Shiny</span>
@@ -276,6 +311,21 @@
                         <span class="tag">Accessibility Analysis</span>
                     </div>
                 </div>
+                    </div>
+                </div>
+                <button class="carousel-btn carousel-btn-prev" aria-label="Previous">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                <div class="carousel-navigation">
+                    <div class="carousel-dots"></div>
+                </div>
+                <button class="carousel-btn carousel-btn-next" aria-label="Next">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
             </div>
         </div>
     </section>
@@ -284,7 +334,10 @@
     <section id="publications" class="section">
         <div class="container">
             <h2 class="section-title">Publications</h2>
-            <div class="publications-list">
+            <div class="carousel-wrapper">
+                <div class="carousel-container">
+                    <div class="carousel-track publications-carousel">
+                <div class="carousel-slide">
                 <div class="publication-item">
                     <div class="publication-header">
                         <h3>A comprehensive analysis of duplication in public transportation</h3>
@@ -296,6 +349,8 @@
                         <a href="https://www.sciencedirect.com/science/article/pii/S0965856425003805" target="_blank" rel="noopener noreferrer" class="publication-link">Access</a>
                     </div>
                 </div>
+                </div>
+                <div class="carousel-slide">
                 <div class="publication-item">
                     <div class="publication-header">
                         <h3>Transit electrification through charger deployment, fleet type selection, and charging schedule optimization</h3>
@@ -307,6 +362,8 @@
                         <a href="https://www.sciencedirect.com/science/article/pii/S0360544225048236" target="_blank" rel="noopener noreferrer" class="publication-link">Access</a>
                     </div>
                 </div>
+                </div>
+                <div class="carousel-slide">
                 <div class="publication-item">
                     <div class="publication-header">
                         <h3>Public transportation fleet electrification and charger schedule optimization using a decomposition heuristic</h3>
@@ -318,6 +375,8 @@
                         <a href="https://www.sciencedirect.com/science/article/pii/S036054422502777X" target="_blank" rel="noopener noreferrer" class="publication-link">Access</a>
                     </div>
                 </div>
+                </div>
+                <div class="carousel-slide">
                 <div class="publication-item">
                     <div class="publication-header">
                         <h3>Fleet cost and capacity effects of automated vehicles in mixed traffic networks: A system optimal assignment problem</h3>
@@ -329,6 +388,8 @@
                         <a href="https://www.sciencedirect.com/science/article/pii/S0968090X23000098" target="_blank" rel="noopener noreferrer" class="publication-link">Access</a>
                     </div>
                 </div>
+                </div>
+                <div class="carousel-slide">
                 <div class="publication-item">
                     <div class="publication-header">
                         <h3>Subway System Usage by Elderly: Application of a Hybrid Choice Model</h3>
@@ -340,6 +401,8 @@
                         <a href="https://nmce.kntu.ac.ir/article_160558.html" target="_blank" rel="noopener noreferrer" class="publication-link">Access</a>
                     </div>
                 </div>
+                </div>
+                <div class="carousel-slide">
                 <div class="publication-item">
                     <div class="publication-header">
                         <h3>Optimal number and location of parking facilities in presence of autonomous vehicles</h3>
@@ -351,6 +414,8 @@
                         <a href="https://nmce.kntu.ac.ir/article_160583.html" target="_blank" rel="noopener noreferrer" class="publication-link">Access</a>
                     </div>
                 </div>
+                </div>
+                <div class="carousel-slide">
                 <div class="publication-item">
                     <div class="publication-header">
                         <h3>Serial formation and parallel competition in public transportation</h3>
@@ -362,6 +427,21 @@
                         <a href="https://www.tandfonline.com/doi/abs/10.1080/23249935.2020.1842940" target="_blank" rel="noopener noreferrer" class="publication-link">Access</a>
                     </div>
                 </div>
+                    </div>
+                </div>
+                <button class="carousel-btn carousel-btn-prev" aria-label="Previous">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                <div class="carousel-navigation">
+                    <div class="carousel-dots"></div>
+                </div>
+                <button class="carousel-btn carousel-btn-next" aria-label="Next">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
             </div>
         </div>
     </section>
