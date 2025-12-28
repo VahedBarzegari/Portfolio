@@ -262,6 +262,7 @@ body {
 
 .bio-text p {
     margin-bottom: 1.5rem;
+    text-align: justify;
 }
 
 .bio-details {
@@ -372,6 +373,7 @@ body {
     line-height: 1.7;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    text-align: justify;
 }
 
 .timeline-description ul {
@@ -697,6 +699,7 @@ body {
     word-wrap: break-word;
     overflow-wrap: break-word;
     hyphens: auto;
+    text-align: justify;
 }
 
 .project-tags {
