@@ -229,15 +229,14 @@ class Carousel {
             });
         }
         
-        // Update button states
-        const maxIndex = this.slides.length - 1;
+        // Update button states - always enabled for circular navigation
         if (this.prevBtn) {
-            this.prevBtn.style.opacity = this.currentIndex === 0 ? '0.5' : '1';
-            this.prevBtn.style.pointerEvents = this.currentIndex === 0 ? 'none' : 'auto';
+            this.prevBtn.style.opacity = '1';
+            this.prevBtn.style.pointerEvents = 'auto';
         }
         if (this.nextBtn) {
-            this.nextBtn.style.opacity = this.currentIndex >= maxIndex ? '0.5' : '1';
-            this.nextBtn.style.pointerEvents = this.currentIndex >= maxIndex ? 'none' : 'auto';
+            this.nextBtn.style.opacity = '1';
+            this.nextBtn.style.pointerEvents = 'auto';
         }
     }
     
@@ -251,15 +250,22 @@ class Carousel {
         const maxIndex = this.slides.length - 1;
         if (this.currentIndex < maxIndex) {
             this.currentIndex += 1;
-            this.updateCarousel();
+        } else {
+            // Circular: go to first item when at last
+            this.currentIndex = 0;
         }
+        this.updateCarousel();
     }
     
     prev() {
+        const maxIndex = this.slides.length - 1;
         if (this.currentIndex > 0) {
             this.currentIndex -= 1;
-            this.updateCarousel();
+        } else {
+            // Circular: go to last item when at first
+            this.currentIndex = maxIndex;
         }
+        this.updateCarousel();
     }
     
     attachEventListeners() {
@@ -294,8 +300,10 @@ class Carousel {
             const diff = startX - currentX;
             if (Math.abs(diff) > 50) {
                 if (diff > 0) {
+                    // Swipe left - go to next
                     this.next();
                 } else {
+                    // Swipe right - go to previous
                     this.prev();
                 }
             }
@@ -319,8 +327,10 @@ class Carousel {
             const diff = startX - currentX;
             if (Math.abs(diff) > 50) {
                 if (diff > 0) {
+                    // Swipe left - go to next
                     this.next();
                 } else {
+                    // Swipe right - go to previous
                     this.prev();
                 }
             }
