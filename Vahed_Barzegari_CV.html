@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vahed Barzegari - Curriculum Vitae</title>
+    <style>
+        @page {
+            size: letter;
+            margin: 0.75in;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            font-size: 10pt;
+            line-height: 1.5;
+            color: #333;
+            background: white;
+        }
+        
+        .cv-container {
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0;
+        }
+        
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 20pt;
+            padding-bottom: 15pt;
+            border-bottom: 2pt solid #1e40af;
+        }
+        
+        .name {
+            font-size: 22pt;
+            font-weight: bold;
+            color: #1e40af;
+            margin-bottom: 5pt;
+            letter-spacing: 0.5pt;
+        }
+        
+        .title {
+            font-size: 11pt;
+            color: #475569;
+            margin-bottom: 8pt;
+            font-style: italic;
+        }
+        
+        .contact-info {
+            font-size: 9pt;
+            color: #64748b;
+            line-height: 1.6;
+        }
+        
+        .contact-info span {
+            margin: 0 8pt;
+        }
+        
+        .contact-info a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Sections */
+        .section {
+            margin-bottom: 18pt;
+            page-break-inside: avoid;
+        }
+        
+        .section-title {
+            font-size: 13pt;
+            font-weight: bold;
+            color: #1e40af;
+            margin-bottom: 10pt;
+            padding-bottom: 3pt;
+            border-bottom: 1pt solid #cbd5e1;
+            text-transform: uppercase;
+            letter-spacing: 0.5pt;
+        }
+        
+        /* Professional Summary */
+        .summary {
+            text-align: justify;
+            font-size: 9.5pt;
+            line-height: 1.6;
+            color: #475569;
+        }
+        
+        /* Education and Experience Items */
+        .item {
+            margin-bottom: 12pt;
+            page-break-inside: avoid;
+        }
+        
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 4pt;
+        }
+        
+        .item-title {
+            font-size: 10.5pt;
+            font-weight: bold;
+            color: #0f172a;
+        }
+        
+        .item-date {
+            font-size: 9pt;
+            color: #64748b;
+            white-space: nowrap;
+            margin-left: 10pt;
+        }
+        
+        .item-company {
+            font-size: 10pt;
+            color: #475569;
+            margin-bottom: 2pt;
+        }
+        
+        .item-location {
+            font-size: 9pt;
+            color: #64748b;
+            font-style: italic;
+            margin-bottom: 6pt;
+        }
+        
+        .item-description {
+            font-size: 9pt;
+            color: #475569;
+            text-align: justify;
+            line-height: 1.5;
+        }
+        
+        .bullet-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .bullet-list li {
+            margin-bottom: 4pt;
+            padding-left: 15pt;
+            position: relative;
+            font-size: 9pt;
+            color: #475569;
+            text-align: justify;
+            line-height: 1.5;
+        }
+        
+        .bullet-list li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #2563eb;
+            font-weight: bold;
+        }
+        
+        /* Projects */
+        .project {
+            margin-bottom: 10pt;
+        }
+        
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 4pt;
+        }
+        
+        .project-name {
+            font-size: 10pt;
+            font-weight: bold;
+            color: #0f172a;
+        }
+        
+        .project-year {
+            font-size: 9pt;
+            color: #64748b;
+        }
+        
+        .project-description {
+            font-size: 9pt;
+            color: #475569;
+            text-align: justify;
+            line-height: 1.5;
+            margin-bottom: 3pt;
+        }
+        
+        .project-tech {
+            font-size: 8.5pt;
+            color: #64748b;
+            font-style: italic;
+        }
+        
+        /* Publications */
+        .publication {
+            margin-bottom: 8pt;
+        }
+        
+        .publication-title {
+            font-size: 9.5pt;
+            font-weight: bold;
+            color: #0f172a;
+            margin-bottom: 3pt;
+        }
+        
+        .publication-authors {
+            font-size: 9pt;
+            color: #475569;
+            margin-bottom: 2pt;
+        }
+        
+        .publication-venue {
+            font-size: 9pt;
+            color: #475569;
+            font-style: italic;
+            margin-bottom: 2pt;
+        }
+        
+        .publication-year {
+            font-size: 9pt;
+            color: #64748b;
+        }
+        
+        /* Awards */
+        .award {
+            margin-bottom: 10pt;
+        }
+        
+        .award-line {
+            font-size: 9.5pt;
+            font-weight: bold;
+            color: #0f172a;
+            margin-bottom: 2pt;
+        }
+        
+        .award-for {
+            font-size: 9pt;
+            color: #475569;
+        }
+        
+        /* Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8pt;
+        }
+        
+        .skill-category {
+            margin-bottom: 8pt;
+        }
+        
+        .skill-category-name {
+            font-size: 9.5pt;
+            font-weight: bold;
+            color: #0f172a;
+            margin-bottom: 3pt;
+        }
+        
+        .skill-items {
+            font-size: 8.5pt;
+            color: #475569;
+            line-height: 1.4;
+        }
+        
+        /* Certificates */
+        .certificate {
+            margin-bottom: 6pt;
+        }
+        
+        .certificate-name {
+            font-size: 9.5pt;
+            font-weight: bold;
+            color: #0f172a;
+            margin-bottom: 2pt;
+        }
+        
+        .certificate-details {
+            font-size: 9pt;
+            color: #475569;
+        }
+        
+        /* Print optimizations */
+        @media print {
+            @page {
+                margin: 0.6in 0.75in;
+            }
+            
+            body {
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+            
+            .section {
+                margin-bottom: 12pt;
+                page-break-inside: auto;
+            }
+            
+            .section-title {
+                page-break-after: avoid;
+                margin-bottom: 8pt;
+            }
+            
+            .item {
+                page-break-inside: avoid;
+                margin-bottom: 10pt;
+            }
+            
+            .project {
+                page-break-inside: avoid;
+                margin-bottom: 8pt;
+            }
+            
+            .publication {
+                page-break-inside: avoid;
+            }
+            
+            .award {
+                page-break-inside: avoid;
+            }
+            
+            .header {
+                margin-bottom: 12pt;
+                padding-bottom: 10pt;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <!-- Header -->
+        <div class="header">
+            <div class="name">VAHED BARZEGARI</div>
+            <div class="title">Data Scientist & Post Doctoral Fellow</div>
+            <div class="contact-info">
+                <span>vahed@yorku.ca</span> | 
+                <span>Toronto, Canada</span> | 
+                <span>LinkedIn: <a href="https://www.linkedin.com/in/vahed-barzegari-bafghi-214936228/" style="color: #2563eb; text-decoration: none;">linkedin.com/in/vahed-barzegari-bafghi-214936228</a></span>
+            </div>
+        </div>
+        
+        <!-- Professional Summary -->
+        <div class="section">
+            <div class="section-title">Professional Summary</div>
+            <div class="summary">
+                I am a Data Scientist at Interactive-OR Lab and a Post Doctoral Fellow at York University, specializing in transportation engineering and operations research. With a PhD in Civil Engineering – Transportation from K.N. Toosi University of Technology, I focus on developing data-driven solutions for public transportation systems, transit electrification, and urban accessibility challenges. My research bridges optimization theory and practical applications, creating interactive tools and decision-support systems that help transit agencies make informed decisions.
+            </div>
+        </div>
+        
+        <!-- Education -->
+        <div class="section">
+            <div class="section-title">Education</div>
+            
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">Doctor of Philosophy (PhD) - Civil Engineering – Transportation</div>
+                    <div class="item-date">Sep 2017 – Feb 2023</div>
+                </div>
+                <div class="item-company">K. N. Toosi University of Technology</div>
+                <div class="item-location">Tehran, Iran</div>
+            </div>
+            
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">Master of Science (MSc) - Civil Engineering – Transportation Planning</div>
+                    <div class="item-date">Sep 2015 – Sep 2017</div>
+                </div>
+                <div class="item-company">K.N. Toosi University of Technology</div>
+                <div class="item-location">Tehran, Iran</div>
+            </div>
+            
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">Bachelor of Science (BSc) - Civil Engineering</div>
+                    <div class="item-date">Sep 2011 – Aug 2015</div>
+                </div>
+                <div class="item-company">K.N. Toosi University of Technology</div>
+                <div class="item-location">Tehran, Iran</div>
+            </div>
+        </div>
+        
+        <!-- Professional Experience -->
+        <div class="section">
+            <div class="section-title">Professional Experience</div>
+            
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">Research Assistant (Post Doctoral Fellow)</div>
+                    <div class="item-date">Jan 2024 – Present</div>
+                </div>
+                <div class="item-company">York University</div>
+                <div class="item-location">Toronto, Canada</div>
+                <ul class="bullet-list">
+                    <li>Developed an interactive 15-minute city accessibility toolkit using Python Shiny and OpenStreetMap, integrating census data to analyse amenity distribution, population needs, and multimodal access across Toronto.</li>
+                    <li>Designed and validated novel duplication indicators (segment- and passenger-based) to evaluate network efficiency, providing evidence-based policy recommendations for urban transit in Almaty.</li>
+                    <li>Engineered an extended data specification (TPFS) enhancing GTFS by incorporating Revenue, Non-Revenue, and Ridership feeds, and demonstrated practical implementation with DART case study.</li>
+                    <li>Developed an integrated optimization framework for charger deployment, fleet type selection, and scheduling, applying it to 20 major transit networks to evaluate electrification strategies.</li>
+                    <li>Built a mixed-integer optimization model and interactive decision-support tool for electric bus allocation and charging, enabling scenario-based planning and validated with TTC operations.</li>
+                    <li>Created predictive analytics methods using real-time GTFS data to detect and mitigate bus bunching/gapping, enhancing service reliability and operational planning.</li>
+                </ul>
+            </div>
+            
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">Civil Technician</div>
+                    <div class="item-date">Jun 2023 – Dec 2023</div>
+                </div>
+                <div class="item-company">Madanchian Chogharat Civil and Development Cooperative Company</div>
+                <div class="item-location">Bafq, Iran</div>
+                <ul class="bullet-list">
+                    <li>Developed and maintained managerial dashboards in Excel to monitor 10+ years of project data, including budgets, scope of work (SOW), progress tracking, and project duration.</li>
+                    <li>Prepared comprehensive reports (monthly, quarterly, and annual) to support data-driven decision-making and performance evaluation.</li>
+                    <li>Collaborated with project partners and stakeholders through regular meetings to align objectives, review progress, and address challenges.</li>
+                </ul>
+            </div>
+            
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">Data Analyst</div>
+                    <div class="item-date">Aug 2022 – May 2023</div>
+                </div>
+                <div class="item-company">Yazd University</div>
+                <div class="item-location">Yazd, Iran</div>
+                <ul class="bullet-list">
+                    <li>Investigated regulatory, legal, and social aspects of motorcycle use in Isfahan to inform evidence-based mobility policies.</li>
+                    <li>Applied machine learning techniques to accident data for predicting high-risk locations, identifying safety hazards, and uncovering key accident causes.</li>
+                    <li>Analysed spatial patterns of crashes to map hazard-prone areas and prioritize safety interventions.</li>
+                    <li>Proposed urban design and policy measures, including dedicated motorcycle lanes, restricted streets, and improved enforcement to enhance mobility and safety.</li>
+                    <li>Conducted a questionnaire survey to explore rider demographics, usage patterns, and behavioural factors, applying ML-based clustering for deeper insights.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Key Projects -->
+        <div class="section">
+            <div class="section-title">Key Projects</div>
+            
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name">TransitPath</div>
+                    <div class="project-year">2025</div>
+                </div>
+                <div class="project-description">An advanced routing platform that computes realistic door-to-door travel paths by integrating GTFS transit data, walking networks, and time-dependent transfers. Provides optimal itineraries with second-by-second trajectory insights for researchers and planners.</div>
+                <div class="project-tech">Technologies: Python, GTFS, Routing, Travel Planning, Analytics, Transit Operations</div>
+            </div>
+            
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name">GTFS Analysis Tool</div>
+                    <div class="project-year">2025</div>
+                </div>
+                <div class="project-description">Enables researchers, planners, and developers to identify data issues, validate feed quality, and gain deeper insights into transit network structures.</div>
+                <div class="project-tech">Technologies: JavaScript, GTFS, Data Analysis, Transit Planning</div>
+            </div>
+            
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name">Bus Electrification Tool</div>
+                    <div class="project-year">2025</div>
+                </div>
+                <div class="project-description">An interactive planning tool that enables transit agencies to explore charging infrastructure and battery scenarios. Test different configurations, evaluate costs, and optimize fleet electrification strategies with data-driven insights.</div>
+                <div class="project-tech">Technologies: Python, Shiny, Optimization, Transit Planning, Electrification</div>
+            </div>
+            
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name">Headway Management Tool</div>
+                    <div class="project-year">2025</div>
+                </div>
+                <div class="project-description">Developed in collaboration with TTC, this tool uses real-time GTFS data and predictive analytics to detect and mitigate bus bunching and gapping. Helps operators maintain consistent headways and improve service reliability across six pilot routes.</div>
+                <div class="project-tech">Technologies: Python, GTFS, Real-time Data, Transit Operations, Predictive Analytics</div>
+            </div>
+            
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name">15-Minute City Accessibility Toolkit</div>
+                    <div class="project-year">2025</div>
+                </div>
+                <div class="project-description">An interactive platform that assesses and visualizes accessibility across Toronto using multimodal travel data, demographics, and facility distributions. Supports urban planning, equity analysis, and accessibility evaluation within the 15-minute city framework.</div>
+                <div class="project-tech">Technologies: Python, Shiny, OpenStreetMap, GIS, Urban Planning, Accessibility Analysis</div>
+            </div>
+        </div>
+        
+        <!-- Awards -->
+        <div class="section">
+            <div class="section-title">Awards</div>
+            
+            <div class="award">
+                <div class="award-line">Transportation Achievement Award (TSMO) — Institute of Transportation Engineers (ITE Canada), 2026</div>
+                <div class="award-for">For: “Real-time Decision Support for Transit Headway Management”</div>
+            </div>
+            
+            <div class="award">
+                <div class="award-line">1st Place, Open Data Challenge — City of Toronto, 2026</div>
+                <div class="award-for">For: Transit Headway Management Platform</div>
+            </div>
+            
+            <div class="award">
+                <div class="award-line">Project of the Year Award — Institute of Transportation Engineers (ITE Toronto), 2025</div>
+                <div class="award-for">For: “Real-Time Application of AI in Correction of Bus Bunching at the TTC”</div>
+            </div>
+        </div>
+        
+        <!-- Selected Publications -->
+        <div class="section">
+            <div class="section-title">Selected Publications</div>
+            
+            <div class="publication">
+                <div class="publication-title">A comprehensive analysis of duplication in public transportation</div>
+                <div class="publication-authors">Barzegari, V., Taubkin, G.G., Barsukov, P. and Nourinejad, M.</div>
+                <div class="publication-venue">Transportation Research Part A: Policy and Practice, 204, p.104747</div>
+                <div class="publication-year">2026</div>
+            </div>
+            
+            <div class="publication">
+                <div class="publication-title">Transit electrification through charger deployment, fleet type selection, and charging schedule optimization</div>
+                <div class="publication-authors">Barzegari, V. and Nourinejad, M.</div>
+                <div class="publication-venue">Energy, p.139181</div>
+                <div class="publication-year">2025</div>
+            </div>
+            
+            <div class="publication">
+                <div class="publication-title">Public transportation fleet electrification and charger schedule optimization using a decomposition heuristic</div>
+                <div class="publication-authors">Naeimian, B., Mohseni, G., Barzegari, V., Nourinejad, M. and Park, P.Y.</div>
+                <div class="publication-venue">Energy, 333, p.137135</div>
+                <div class="publication-year">2025</div>
+            </div>
+            
+            <div class="publication">
+                <div class="publication-title">Fleet cost and capacity effects of automated vehicles in mixed traffic networks: A system optimal assignment problem</div>
+                <div class="publication-authors">Barzegari, V., Edrisi, A. and Nourinejad, M.</div>
+                <div class="publication-venue">Transportation Research Part C: Emerging Technologies, 148, p.104020</div>
+                <div class="publication-year">2023</div>
+            </div>
+            
+            <div class="publication">
+                <div class="publication-title">Subway System Usage by Elderly: Application of a Hybrid Choice Model</div>
+                <div class="publication-authors">Edrisi, A., Hayati Salout, M., Ganjipour, H. and Barzegari, V.</div>
+                <div class="publication-venue">Numerical Methods in Civil Engineering, 7(3), pp.78-93</div>
+                <div class="publication-year">2022</div>
+            </div>
+        </div>
+        
+        <!-- Technical Skills -->
+        <div class="section">
+            <div class="section-title">Technical Skills</div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-category-name">Optimization and Modelling</div>
+                    <div class="skill-items">Mixed-integer Linear Programming (MILP), Decomposition Heuristics, Scheduling Optimization, Fleet Allocation, Charger Allocation, Transit Electrification Planning</div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-category-name">Programming and Tools</div>
+                    <div class="skill-items">MATLAB, Python, Pandas, NumPy, Shiny, Matplotlib, Seaborn, HTML, CSS, JavaScript, GAMS, Excel, VBA</div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-category-name">Software</div>
+                    <div class="skill-items">EMME, Microsoft Office, Excel, Word, PowerPoint</div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-category-name">Data Analysis and Machine Learning</div>
+                    <div class="skill-items">Predictive Analytics, Clustering, Regression Analysis, Accident Risk Modelling, Demand Forecasting, Spatial Analysis</div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-category-name">GIS and Mapping</div>
+                    <div class="skill-items">QGIS, OpenStreetMap, Spatial Data Integration, Urban Accessibility Analysis, Transit Network Visualization</div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-category-name">Soft Skills</div>
+                    <div class="skill-items">Communication, Collaboration, Presentation, Independent Working, Team Setting, Problem-solving, Public Engagement, Technical Documentation, Project Management</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Certifications -->
+        <div class="section">
+            <div class="section-title">Certifications</div>
+            <div class="certificate">
+                <div class="certificate-name">Databases and SQL for Data Science with Python</div>
+                <div class="certificate-details">IBM (Coursera) - November 2025 (Credential ID: Q4PU2UKLKR5B)</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

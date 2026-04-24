@@ -818,6 +818,26 @@ body {
     text-decoration: underline;
 }
 
+/* Awards (portfolio index) */
+.awards-list {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.awards-list .publication-item {
+    min-height: 0;
+}
+
+.award-for {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
 /* Skills */
 .skills-container {
     display: grid;
