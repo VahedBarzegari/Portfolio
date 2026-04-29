@@ -157,6 +157,16 @@ CV_DATA = {
             "year": "2025",
             "for": "Real-Time Application of AI in Correction of Bus Bunching at the TTC",
         },
+        {
+            "name": "Accepted to MSc Through Brilliant Talents Quota",
+            "organization": "K.N. Toosi University of Technology",
+            "for": "Admitted to the master's degree program through the Brilliant Talents quota.",
+        },
+        {
+            "name": "2nd Rank, National Doctoral Entrance Exam",
+            "organization": "National Doctoral Entrance Exam (Iran)",
+            "for": "Achieved second rank in the national doctoral entrance examination.",
+        },
     ],
     
     "publications": [
@@ -415,15 +425,17 @@ def create_cv_pdf(filename="Vahed_Barzegari_CV.pdf"):
     
     story.append(Spacer(1, 0.1*inch))
     
-    # Add Awards (newest year first; stable for ties)
+    # Add Awards & Honors (newest year first; stable for ties)
     if CV_DATA.get("awards"):
-        story.append(Paragraph("AWARDS", section_style))
+        story.append(Paragraph("AWARDS & HONORS", section_style))
         for award in sorted(
             CV_DATA["awards"],
-            key=lambda a: int(str(a.get("year", 0))),
+            key=lambda a: int(str(a.get("year", "0"))) if str(a.get("year", "0")).isdigit() else 0,
             reverse=True,
         ):
-            aw_line = f"<b>{award['name']}</b> — {award['organization']}, {award['year']}"
+            aw_line = f"<b>{award['name']}</b> — {award['organization']}"
+            if award.get("year"):
+                aw_line += f", {award['year']}"
             story.append(Paragraph(aw_line, job_title_style))
             for_text = award.get("for")
             if for_text:
